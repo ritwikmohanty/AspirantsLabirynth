@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useFirebase } from '../context/Firebase'; 
+import { useFirebase } from '../context/Firebase';
 
 const HomePage = () => {
   const { signinWithGoogle } = useFirebase();
@@ -86,12 +86,12 @@ const HomePage = () => {
 const styles = {
   container: {
     fontFamily: "'Arial', sans-serif",
-    backgroundImage: "/bg.jpeg", // Placeholder background image
+    backgroundImage: "url('/bg.jpeg')", // Placeholder background image
     backgroundSize: "cover",
     backgroundPosition: "center",
     color: "#fff",
     minHeight: "100vh",
-    padding: "20px",
+    padding: "0px",
     animation: "fadeIn 0.5s ease-in",
   },
   header: {
@@ -132,28 +132,31 @@ const styles = {
   hero: {
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "flex-start",
     flexDirection: "column",
-    textAlign: "center",
     marginTop: "60px",
-    padding: "20px",
+    paddingLeft: "50px",
     animation: "fadeIn 2s ease-in",
   },
   heroText: {
-    maxWidth: "600px",
+    maxWidth: "800px",
+    textAlign: "left", // Align text to the left
+    color: "#000", // Set text color to black
     marginBottom: "30px",
   },
   heroTitle: {
     fontFamily: "Grenze Gotisch, serif",
     fontSize: "60px",
     fontWeight: 400,
-    textAlign: "center",
+    textAlign: "left", // Align title text to the left
+    color: "#000", // Set title color to black
     animation: "slideIn 2s ease-in-out",
   },
   heroDescription: {
     fontFamily: "Inter, sans-serif",
     fontSize: "18px",
     fontWeight: 400,
+    color: "#000", // Set description color to black
     margin: "20px 0",
     animation: "fadeIn 2.5s ease-in",
   },
