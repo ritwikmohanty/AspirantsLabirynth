@@ -60,7 +60,7 @@ const HomePage = () => {
           <a style={styles.navLink} href="/tools">Tools</a>
           <div style={styles.profileIcon} onClick={handleProfileClick}>
             <img
-              src="/profile-icon.png"
+              src="/login.png"
               alt="Profile"
               style={styles.profileImage}
             />
@@ -98,7 +98,7 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "15px 20px",
+    padding: "10px 20px",
     background: "rgba(0, 0, 0, 0.7)", // Slightly transparent background for header
     borderBottom: "1px solid #ccc",
     animation: "slideIn 1s ease-in-out",
@@ -112,11 +112,13 @@ const styles = {
   },
   nav: {
     display: "flex",
+    alignItems: "center",
     gap: "30px",
   },
   navLink: {
     color: "#fff",
     textDecoration: "none",
+    lineHeight: "40px",
     fontSize: "20px",
   },
   profileIcon: {

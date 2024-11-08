@@ -346,9 +346,7 @@ export default function Tools() {
 
 const styles = {
   container: {
-    maxWidth: '1200px',
-    margin: '0 auto',
-    padding: '20px',
+    padding: '100px',
   },
   title: {
     textAlign: 'center',
